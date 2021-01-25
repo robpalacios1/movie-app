@@ -1,10 +1,18 @@
 import React from 'react'
+import Movie from './components/Movie'
 import './App.css';
 
 function App() {
+
+  const movies = ['1','2','3','4'];
+
   return (
     <div className="App">
-      <h1>Hello</h1>
+      {
+        movies.map(movie => (
+          <Movie />
+        ))
+      }
     </div>
   );
 }
