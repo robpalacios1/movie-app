@@ -26,6 +26,7 @@ header {
 
 .movie-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -40,6 +41,8 @@ header {
 }
 
 .movie img {
+  object-fit: cover;
+  height: 450px;
   max-width: 100%;
 }
 
@@ -74,4 +77,23 @@ header {
 
 .movie:hover .movie-over {
   transform: translateY(0%);
+}
+
+.tag {
+  background-color: #22254b;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.tag.green {
+  color: green;
+}
+
+.tag.yellow {
+  color: yellow;
+}
+
+.tag.red {
+  color: red;
 }
