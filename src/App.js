@@ -22,6 +22,15 @@ function App() {
 
   const handleOnSubmit = (event) => {
     event.preventDefault();
+
+    if(searchTerm) {
+      fetch(SEARCH_API+searchTerm)
+        .then((res) => res.json())
+        .then((data) => {
+        setMovies(data.results);
+      })
+      setSearchTerm('');
+    }
   }
 
   const handleOnChange = (event) => {
