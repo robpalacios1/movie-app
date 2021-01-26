@@ -1,5 +1,6 @@
 import React, { useState, useEffect, Fragment } from 'react'
 import Movie from './components/Movie'
+import Footer from './components/Footer'
 import './App.css';
 
 const FEATURED_API = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page=1";
@@ -57,6 +58,7 @@ function App() {
           ))
         }
       </div>
+      <Footer />
     </Fragment>
   );
 }
