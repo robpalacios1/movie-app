@@ -1,0 +1,16 @@
+.footer {
+  text-align: center;
+  font-size: 20px;
+}
+
+.footer h3 {
+  font-family: cursive;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.footer p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  margin-top: 10px;
+}
