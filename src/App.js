@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, Fragment } from 'react'
 import Movie from './components/Movie'
 import './App.css';
 
@@ -20,13 +20,22 @@ function App() {
   }, [])
 
   return (
-    <div className="movie-container">
-      {
-        movies.length > 0 && movies.map(movie => (
-          <Movie key={movie.id} {...movie}/>
-        ))
-      }
-    </div>
+    <Fragment>
+      <header>
+        <input
+          className="search"
+          type="search"
+          placeholder="Search..."
+        />
+      </header>
+      <div className="movie-container">
+        {
+          movies.length > 0 && movies.map(movie => (
+            <Movie key={movie.id} {...movie}/>
+          ))
+        }
+      </div>
+    </Fragment>
   );
 }
 
